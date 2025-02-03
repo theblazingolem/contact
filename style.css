@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #1E1E1E;
+    font-family: Arial, sans-serif;
+}
+.chat-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.chat-icon svg {
+    width: 80px;
+}
+.input-container {
+    display: flex;
+    align-items: center;
+    background: #444;
+    border-radius: 30px;
+    padding: 18px; /* Increased padding for bigger size */
+    width: 100%; /* Slightly wider */
+    max-width: 100%; /* Slightly bigger input fields */
+    margin-bottom: 15px;
+}
+.input-container input {
+    flex: 1;
+    border: none;
+    width: 100%;
+    background: transparent;
+    color: white;
+    font-size: 18px; /* Slightly larger text */
+    outline: none;
+}
+.send-button {
+    background: white;
+    border: none;
+    padding: 12px 25px; /* Slightly bigger */
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+    display: block;
+    margin: 10px auto; /* Centers horizontally */
+}
+.hidden {
+    display: none;
+}
+#confirmationMessage {
+    margin-top: 10px;
+    color: white;
+    font-size: 14px;
+    text-align: center;
+}
+form{
+    width: 300px;
+}

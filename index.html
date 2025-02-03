@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Interface</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="chat-icon">
+        <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_9_9)">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M39.3943 8.58842e-06C28.9464 8.58842e-06 18.9263 4.15047 11.5384 11.5383C4.15063 18.9262 0.000196036 28.9462 0.000196036 39.3942C-0.0244064 47.1484 2.26721 54.7334 6.58133 61.1768L1.31763 75.2629C0.736193 76.8186 2.06956 78.4157 3.70436 78.1222L22.1536 74.8029C23.9859 75.6957 25.8794 76.4436 27.8164 77.0407C27.142 74.0879 26.7858 71.0141 26.7858 67.8572C26.7858 45.174 45.1741 26.7857 67.8572 26.7857C71.0273 26.7857 74.1136 27.1449 77.0771 27.8247C75.6321 23.1199 73.315 18.7189 70.238 14.8549C66.5456 10.2179 61.8545 6.47387 56.5141 3.90185C51.1737 1.32983 45.3218 -0.00390513 39.3943 8.58842e-06ZM90.5871 45.1287C84.5586 39.1008 76.3829 35.7143 67.8584 35.7143C63.022 35.7111 58.2472 36.7994 53.8898 38.8979C49.5324 40.9965 45.7048 44.0514 42.6921 47.8348C39.6794 51.6183 37.5594 56.0328 36.4899 60.7495C35.4205 65.4662 35.4291 70.3634 36.5154 75.0764C37.6016 79.7893 39.7374 84.1964 42.7635 87.9686C45.7896 91.7414 49.6281 94.7829 53.9929 96.8657C58.3578 98.9486 63.1364 100.02 67.9728 100C72.8093 99.9793 77.5786 98.8679 81.9257 96.7479L96.2971 99.3336C97.9321 99.6279 99.265 98.0307 98.6836 96.4743L94.6314 85.63C98.1514 80.3729 100.021 74.1843 100.001 67.8572C100.001 59.3324 96.615 51.1567 90.5871 45.1287Z" fill="white"/>
+            </g>
+            <defs>
+            <clipPath id="clip0_9_9">
+                <rect width="100" height="100" fill="white"/>
+            </clipPath>
+            </defs>
+        </svg>            
+    </div>
+
+    <form id="chatForm" action="https://formspree.io/f/xpwqryzo" method="POST">
+        <div class="input-container">
+            <input type="text" name="username" id="username" placeholder="Enter username" required>
+        </div>
+        <div class="input-container">
+            <input type="text" name="message" id="message" placeholder="Enter message" required>
+        </div>
+        <button type="submit" class="send-button">Send</button>
+        <p id="confirmationMessage" class="hidden">Your message was sent!</p>
+    </form>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
